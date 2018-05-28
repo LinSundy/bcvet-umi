@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1440" height="130" viewBox="0 0 1440 130">
+  <defs>
+    <path id="profileheaderbg-b" d="M0,479 L1440,479 L1440,608.892783 C1342.14102,587.658902 1222.14102,577.669899 1080,578.925773 C866.788472,580.809583 877.866372,606.76069 720,608.892783 C562.133628,611.024876 514.190325,580.671907 360,578.917525 C257.20645,577.747937 137.20645,587.73969 0,608.892783 L0,479 Z"/>
+  </defs>
+  <g fill="none" fill-rule="evenodd" transform="translate(0 -479)">
+    <use fill="#000" filter="url(#profileheaderbg-a)" xlink:href="#profileheaderbg-b"/>
+    <use fill="#454F67" xlink:href="#profileheaderbg-b"/>
+  </g>
+</svg>

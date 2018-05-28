@@ -1,0 +1,133 @@
+@import (reference) '../variables.less';
+@import (reference) '../base.less';
+@import (reference) './content.less';
+
+:global {
+  .about {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    border-color: #666;
+    background: url("../../img/content4.jpg") center center;
+    background-size: cover;
+    &:before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      background-color: rgba(0, 0, 0, .4);
+    }
+  }
+}
+
+.aboutWrapper {
+  position: absolute;
+  width: 1100px;
+  transition: width,height .2s;
+  left: 50%;
+  top: 50%;
+  margin-left: -550px;
+  height: 600px;
+  margin-top: -300px;
+  .aboutBox {
+    position: relative;
+    margin-top: 70px;
+    width: 100%;
+    padding: 75px 70px 0 600px;
+    height: 420px;
+    background-color: rgba(0, 0, 0, .3);
+    .border {
+      left: 100px;
+      top: 50px;
+      position: absolute;
+      width: 424px;
+      height: 320px;
+      background: url("../../img/boreder.png");
+    }
+    .aboutCover {
+      position: absolute;
+      width: 420px;
+      height: 272px;
+      left: 124px;
+      top: 74px;
+      background: url("../../img/about.png");
+    }
+  }
+  .content4Title {
+    color: #EBEBEB;
+    .fs20;
+  }
+  .content4Desc {
+    color: #CCCCCC;
+    .fs14;
+    .lh30;
+  }
+}
+
+@media screen and (max-width: @screen-lg-max) {
+  .aboutWrapper {
+    width: 970px;
+    margin-left: -485px;
+    .aboutBox {
+      padding: 50px 30px 0 520px;
+      .border {
+        left: 40px;
+      }
+      .aboutCover {
+        left: 64px;
+      }
+      .content4Desc {
+        .fs14;
+        .lh28;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: @screen-md-max) {
+  .aboutWrapper {
+    width: 740px;
+    margin-left: -370px;
+    .aboutBox {
+      height: 315px;
+      padding: 30px 30px 0 380px;
+      margin-top: 50px;
+      .border {
+        width: 297px;
+        height: 224px;
+      }
+      .aboutCover {
+        width: 294px;
+        height: 190px;
+      }
+      .content4Title {
+        .fs16;
+      }
+      .content4Desc {
+        .fs12;
+        .lh24;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: @screen-sm-max) {
+  .aboutWrapper {
+    width: calc(~"100% - 80px");
+    left: 0;
+    margin-left: 40px;
+    margin-right: 40px;
+    .aboutBox {
+      height: auto;
+      padding: 40px;
+      .border {
+        .dn;
+      }
+      .aboutCover {
+        .dn;
+      }
+    }
+  }
+}

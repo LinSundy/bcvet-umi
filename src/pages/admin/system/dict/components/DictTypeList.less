@@ -1,0 +1,130 @@
+@import "~antd/lib/style/themes/default.less";
+
+.dictTree {
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 28px 0 0 10px;
+  &:before {
+    content: '';
+    position: absolute;
+    left: 2px;
+    top: 28px;
+    width: 1px;
+    height: calc(~"100% - 28px");
+    background: #E7E9EC;
+  }
+  li {
+    position: relative;
+    list-style: none;
+    cursor: pointer;
+    &.on {
+      background: #00C1DE;
+      .name {
+        color: #fff;
+      }
+      &:hover {
+        .name {
+          color: #fff;
+        }
+      }
+    }
+    &:last-child {
+      &:before {
+        content: '';
+        position: absolute;
+        width: 10px;
+        height: 14px;
+        background: #fff;
+        left: -12px;
+        bottom: 0;
+      }
+    }
+    &:first-child {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      &:after {
+        content: '';
+        width: 0;
+        height: 0;
+        overflow: hidden;
+      }
+      .name {
+        margin-left: 0;
+        padding-left: 0;
+      }
+      &.on {
+        padding-left: 7px;
+      }
+      &:before {
+        content: '';
+        width: 0;
+        height: 0;
+        overflow: hidden;
+      }
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      left: -7px;
+      top: 13px;
+      display: block;
+      width: 7px;
+      height: 1px;
+      background: #E7E9EC;
+    }
+    &:hover {
+      cursor: pointer;
+      .btns {
+        display: block;
+      }
+      .name {
+        color: #00C1DE;
+      }
+    }
+    p {
+      position: relative;
+      height: 28px;
+      margin-bottom: 0;
+      line-height: 28px;
+      color: #576369;
+      font-weight: 300;
+    }
+    .dictItem {
+      display: inline-block;
+      width: 100%;
+      height: 28px;
+      padding-right: 16px;
+    }
+    .line {
+      position: absolute;
+      left: 0;
+      top: 13px;
+      display: inline-block;
+      width: 15px;
+      height: 1px;
+      background: #E7E9EC;
+    }
+    .name {
+      display: inline-block;
+      width: 100%;
+      margin-left: 16px;
+      padding-left: 5px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .btns {
+      position: absolute;
+      right: 0;
+      top: 0;
+      display: none;
+    }
+    .plr5 {
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+  }
+}

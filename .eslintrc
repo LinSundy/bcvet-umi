@@ -1,0 +1,9 @@
+{
+  "extends": "umi",
+  "globals": {
+    "document": true,
+    "localStorage": true,
+    "window": true,
+    "Globals": true
+  }
+}

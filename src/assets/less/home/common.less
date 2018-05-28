@@ -1,0 +1,66 @@
+@import './global';
+
+:global {
+  .content-wrapper > .tween-one-leaving, .queue-anim-leaving {
+    position: absolute !important;
+    width: 100%;
+  }
+
+  .video {
+    max-width: 800px;
+  }
+
+  .templates-wrapper {
+    user-select: none;
+  }
+
+  .is-edit {
+    * {
+      pointer-events: none;
+    }
+  }
+
+  #react-content {
+    min-height: 100%;
+  }
+
+  .contentTitle {
+    position: relative;
+    margin: 0 auto;
+    width: 260px;
+    padding-bottom: 30px;
+    .tac;
+    .white;
+    font-size: 40px;
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 0px;
+      left: 0;
+      height: 1px;
+      width: 100%;
+      background-color: #ccc;
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      height: 7px;
+      width: 30px;
+      .bgcw;
+      left: 50%;
+      margin-left: -15px;
+      bottom: -3px;
+      z-index: 1;
+    }
+    .en {
+      position: absolute;
+      width: 100%;
+      text-align: center;
+      .fb;
+      left: 0;
+      top: 45px;
+      .fs20;
+    }
+  }
+
+}

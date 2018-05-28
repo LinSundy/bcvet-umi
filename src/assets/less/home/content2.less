@@ -1,0 +1,82 @@
+@import (reference) '../variables';
+@import (reference) '../base';
+@import './content.less';
+
+:global {
+  .case {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    border-color: #666;
+    background: url("../../img/content2.jpg") center center;
+    background-size: cover;
+    &:before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      background-color: rgba(0, 0, 0, .4);
+    }
+  }
+}
+.caseWrapper {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 870px;
+  margin-left: -435px;
+  height: 640px;
+  margin-top: -320px;
+  :global {
+    .swiper-container {
+      height: 380px;
+      margin-top: 60px;
+    }
+  }
+}
+
+@media screen and (max-width:  @screen-md-max){
+  .caseWrapper {
+    width: 580px;
+    margin-left: -290px;
+  }
+}
+
+@media screen and (max-width: @screen-md){
+  .caseWrapper {
+    width: 290px;
+    margin-left: -145px;
+  }
+}
+
+.caseBox {
+  position: relative;
+  padding: 10px 10px 202px 10px;
+  height: 380px;
+  background-color: rgba(0, 0, 0, .3);
+  .title {
+    .fs20;
+    .fb;
+    .tac;
+    margin: 0;
+    padding: 10px 0 0;
+    .white;
+  }
+  .desc {
+    .mt20;
+    .fs14;
+    color: #CCCCCC;
+    text-indent: 2em;
+    line-height: 22px;
+  }
+  .cover {
+    position: absolute;
+    bottom: 10px;
+    width: calc(~"100% - 20px");
+    height: 168px;
+    left: 10px;
+  }
+}
+

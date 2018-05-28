@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1920px" height="318px" viewBox="0 0 1920 318" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>footerBgDefault~iphone</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="footerBg" fill="#212A4C">
+            <path d="M0,0.000141558063 L1920,0.000141558063 L1920,310.000142 C1789.52136,288.74281 1629.52136,278.74281 1440,280.000142 C1155.71796,281.88614 1170.4885,315.035586 960,317.170155 C749.511504,319.304724 685.5871,291.756561 480,290.000142 C342.941933,288.829196 182.941933,295.495863 0,310.000142 L0,0.000141558063 Z" id="Shape" transform="translate(960.000000, 158.644071) scale(-1, 1) rotate(-180.000000) translate(-960.000000, -158.644071) "></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,203 @@
+@import (reference) "./base.less";
+@import (reference) "./variables.less";
+@import (reference) "./icon.less";
+
+// 默认图片
+.defaultImg {
+  position: relative;
+  background-color: #ECEDEF;
+  &:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    margin-left: -20px;
+    background: url('../img/default.png');
+  }
+}
+
+// 分页居中
+.pagination {
+  .tac;
+  .mb30;
+}
+
+// 页面布局
+.container {
+  position: relative;
+  margin-top: -77px;
+  &.index {
+    padding-top: 77px;
+    background: #fff url('../img/banner.jpg') no-repeat right 0;
+  }
+  &.course {
+    padding-top: 317px;
+    background: url("../img/banner1.jpg") no-repeat;
+  }
+  &.question {
+    padding-top: 350px;
+    background: #fff url('../img/banner3.jpg') no-repeat center top;
+  }
+  &.activity {
+    padding-top: 350px;
+    background: url("../img/banner2.jpg") no-repeat top;
+  }
+  &.blog {
+    padding-top: 350px;
+    background: url("../img/banner4.jpg") no-repeat top;
+  }
+  &.news {
+    padding-top: 350px;
+    background: url("../img/banner5.jpg") no-repeat top;
+  }
+  &.analysis {
+    padding-top: 370px;
+    background: url("../img/banner6.jpg") no-repeat;
+  }
+}
+
+.banner {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  .title {
+    position: relative;
+    z-index: 0;
+    margin-top: 148px;
+    .mlra;
+    .tac;
+    .fs24;
+    width: 235px;
+    height: 44px;
+    line-height: 44px;
+    .white;
+    letter-spacing: 2px;
+    font-weight: 600;
+    &:before {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #0077FF;
+      transform: skewX(-10deg);
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      z-index: -2;
+      top: 4px;
+      left: -5px;
+      width: 100%;
+      height: 100%;
+      background-color: #FBBD5E;
+      transform: skewX(-10deg);
+    }
+  }
+  .description {
+    .mt20;
+    color: #fbbd5e;
+    .fs16;
+    .tac;
+  }
+  &.search {
+    .title {
+      margin-top: 130px;
+      &:before,
+      &:after {
+        .dn;
+      }
+      color: #FBBD5E;
+    }
+    .searchBox {
+      position: relative;
+      margin: 0 auto;
+      padding: 0;
+      line-height: 50px;
+      height: 50px;
+      .white;
+      width: 281px;
+      z-index: 0;
+      &:before {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #0077FF;
+        transform: skewX(-10deg);
+      }
+      &:after {
+        content: '';
+        position: absolute;
+        z-index: -2;
+        top: 4px;
+        left: -5px;
+        width: 100%;
+        height: 100%;
+        background-color: #FBBD5E;
+        transform: skewX(-10deg);
+      }
+      .value {
+        position: absolute;
+        left: 0;
+        background-color: transparent;
+        width: 80%;
+        height: 50px;
+        line-height: 50px;
+        .white;
+        border: none;
+        .fs14;
+        &:focus {
+          border: none;
+        }
+        &::-webkit-input-placeholder {
+          .white;
+        }
+        &:-moz-placeholder { /* Firefox 18- */
+          .white;
+        }
+        &::-moz-placeholder { /* Firefox 19+ */
+          .white;
+        }
+        &:-ms-input-placeholder {
+          .white;
+        }
+      }
+      i {
+        position: absolute;
+        .icon(16px, 16px, -522px, -2px);
+        right: 15px;
+        top: 16px;
+        z-index: 99;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+// 详情页外层
+.pageDetail {
+  width: 100%;
+  margin-top: -77px;
+  padding-top: 110px;
+  background-color: #f8faff;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 110px;
+    z-index: 1;
+    background-color: #fff;
+    box-shadow: 0 -2px 14px 2px rgba(0, 119, 255, 0.1);
+  }
+}

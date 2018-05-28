@@ -1,0 +1,119 @@
+@import (reference) '../variables.less';
+@import (reference) '../base.less';
+
+:global {
+  .contact {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    border-color: #666;
+    background: url("../../img/content6.png") center center;
+    background-size: cover;
+    &:before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      background-color: rgba(0, 0, 0, .4);
+    }
+  }
+}
+
+.contactWrapper {
+  width: 100%;
+  max-width: 900px;
+  height: 360px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -180px;
+  background-color: rgba(0, 0, 0, .85);
+  .contactIcons {
+    position: absolute;
+    width: 60px;
+    height: 200px;
+    top: 30px;
+    right: 11.1111%;
+    border: 1px solid #fff;
+    .qq,
+    .wx,
+    .sina {
+      .mt30;
+      width: 60px;
+      height: 60px;
+    }
+    .wx {
+    }
+    .sina {
+    }
+  }
+  .qrCode {
+    position: absolute;
+    width: 132px;
+    height: 134px;
+    left: auto;
+    top: 113px;
+    right: 27.5555%;
+  }
+  .locations {
+    position: absolute;
+    top: 13px;
+    left: 11.1111%;
+    width: 266px;
+    .title {
+      margin: 30px 0 15px 0;
+      position: relative;
+      color: #EBEBEB;
+      .fs28;
+      &:after {
+        position: absolute;
+        left: 0;
+        bottom: 0px;
+        content: '';
+        width: 30px;
+        height: 2px;
+        background-color: #444444;
+      }
+    }
+    .info {
+      color: #CCCCCC;
+      margin: 0;
+    }
+  }
+}
+
+@media screen and (max-width: @screen-sm-max) {
+  .contactWrapper {
+    .locations {
+      position: relative;
+      margin: 0 15px;
+      top: 0;
+      left: 0;
+      .title {
+        .mt20;
+        .fs16;
+      }
+      .info {
+        .fs12;
+      }
+    }
+    .qrCode {
+      display: block;
+      width: 66px;
+      height: 67px;
+      left: 15px;
+      top: auto;
+      bottom: 40px;
+      right: auto;
+    }
+    .contactIcons {
+      height: 60px;
+      width: calc(~"100% - 30px");
+      right: 0;
+      top: auto;
+      bottom: 45px;
+    }
+  }
+}
